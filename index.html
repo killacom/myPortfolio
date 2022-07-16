@@ -6,16 +6,18 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Thomas Porter, Programmer</h1>
-        </header>
-        <nav>
-            <ul role="presentation" id="nav">
-                <li class="nav-item">About Me</li>
-                <li class="nav-item">Portfolio</li>
-                <li class="nav-item">Contact</li>
-            </ul>
-        </nav>
+        <div class="header">
+            <header>
+                <h1>Thomas Porter, Programmer</h1>
+            </header>
+            <nav>
+                <ul role="presentation" id="nav">
+                    <li class="nav-item">About Me</li>
+                    <li class="nav-item">Portfolio</li>
+                    <li class="nav-item">Contact</li>
+                </ul>
+            </nav>
+        </div>
         <main>
             <div id="about-me">
                 <h2>About Me</h2>
@@ -29,11 +31,12 @@
             <br>
             <div id="portfolio">
                 <h2>Portfolio</h2>
+                <hr>
                 <div class="portfolio-item">
                     <h3>Web Project: School field trip reservation system for Page Farms of Raleigh</h3>
                     <p><i>Created to specs provided by Farmer Page &amp; Family</i></p>
                     <p>Tools used to create: HTML, CSS, PHP, MySQL Database</p>
-                    <h3>Features:</h3>
+                    <h4>Features:</h4>
                     <ul role="presentation" class="features-list">
                         <li class="feature">Ability for teachers to make reservations online automatically sending a confirmation email to farmer</li>
                         <li class="feature">Ability for teachers to opt to make a password to be able to make changes to reservation later</li>
@@ -44,19 +47,24 @@
                         <li class="feature">Admin Kid Count Calender page for quick refernce of reservation loads</li>
                     </ul>
                 </div>
-                <br>
+                <hr>
                 <div class="portfolio-item">
                     <h3>Web/On Site Project: Customer Portal Website for my employer Durham Polaris (seperate from main website)</h3>
                     <p><i>Created without prompt just to make my daily job easier</i></p>
                     <p>Tools used to create: HTML, CSS, Javascript, PHP, MySQL Database</p>
-                    <h3>Features:</h3>
+                    <h4>Features:</h4>
                     <ul role="presentation" class="features-list">
-                        <li class="feature">Automatic backup data from in store point of sale software (old DOS software) to web server everyday automatically </li>
+                        <li class="feature">Automatic backup data from in store point of sale software (old DOS software) to web server everyday</li>
                         <li class="feature">Inserts data from backup into MySQL database</li>
                         <li class="feature">Allows customer to log in and view previous invoices, work order information, etc online (from backup data)</li>
                         <li class="feature">Automatic invoice emailer that sends invoice copies to customers who elect to receive them.</li>
                     </ul>
                 </div>
+            </div>
+            <br>
+            <div id="contact">
+                <h2>Contact</h2>
+                <p>Email: thomas.porter.1991@gmail.com</p>
             </div>
         </main>
     </body>

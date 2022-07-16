@@ -5,8 +5,13 @@ body {
     width: 1000px;
     margin: auto;
 }
-h1 {
-    text-align: center;
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1, h2, h3 {
+    font-family:'Courier New', Courier, monospace;
 }
 h2 {
     text-decoration: underline;
@@ -15,17 +20,31 @@ h2 {
 h3 {
     font-size: 1.5em;
 }
-header {
-    display: flex;
+h4 { 
+    font-size: 1.2em;
 }
-#nav {
+.header {
     display: flex;
-    float: right;
 }
 #about-me {
     font-size: 1.1em;
+    border: 1px solid black;
+    padding: 0 10px;
+    margin: 10px 0;
 }
 .nav-item {
-    display: inline-flex;
+    display: inline-block;
     margin: 0 5px;
+}
+#portfolio {
+    display: block;
+    border: 1px solid black;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+#contact {
+    display: block;
+    border: 1px solid black;
+    padding: 0 10px;
+    margin: 10px 0;
 }
