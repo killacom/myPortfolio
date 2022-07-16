@@ -7,36 +7,66 @@ body {
 }
 main {
     position: relative;
-    top: 100px;
+    top: 140px;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
 }
+a, a:visited {
+    color: blue;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: blue;
+    text-decoration: underline overline;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+}
+hr {
+    border: 0.5px solid black;
+}
 h1, h2, h3 {
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace; 
+} 
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 0.2em;
 }
 h2 {
     text-decoration: underline;
-    font-size: 180%;
+    font-size: 1.8em;
 }
 h3 {
-    font-size: 150%;
+    font-size: 1.5em;
 }
 h4 { 
-    font-size: 120%;
+    font-size: 1.2em;
+}
+h5 {
+    font-style: italic;
+    font-size: 1.2em;
 }
 header {
     width: 99%;
     max-width: 1000px;
     position: fixed;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     border: 1px solid black;
     background-color: white;
     z-index: 99;
     top: 0px;
+    padding: 5px;
+    box-sizing: border-box;
 }
-#nav {
+
+#nav-list {
     margin-left: auto;
     margin-right: 20px;
 }
@@ -50,6 +80,9 @@ header {
     display: inline-block;
     align-self: flex-end;
     margin: 0 5px;
+}
+.nav-item a {
+    font-size: 1.3em;
 }
 #portfolio {
     display: block;
@@ -70,4 +103,5 @@ header {
 }
 #icons img {
     height: 40px;
+    margin: 5px;
 }
